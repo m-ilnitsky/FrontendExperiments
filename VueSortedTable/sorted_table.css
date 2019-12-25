@@ -1,0 +1,29 @@
+.table {
+    width: 100%;
+}
+
+
+/*Таблица контактов*/
+
+.finder_table th:first-child,
+.finder_table td:first-child {
+    width: 40px;
+}
+
+.finder_table td p {
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+[v-cloak] {
+    display: none;
+}
+
+
+.column-name,
+.column-age,
+.column-date,
+.column-lang,
+.column-test {
+    width: 20%;
+}
