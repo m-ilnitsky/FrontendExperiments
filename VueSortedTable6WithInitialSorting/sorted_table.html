@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Сортирующаяся таблица</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="sorted_table.css">
+</head>
+
+<body>
+
+    <div class="container" id="App">
+        <div class="row">
+            <div class="col-sm-12">
+
+                <table class="table table-sm table-striped table-hover">
+                    <thead class="thead-white">
+                        <tr>
+                            <th v-sort-by-column:[this]="{fieldName: 'id', fieldType: 'number', fieldFunction: null, initialCellHtml: ''}">ID</th>
+                            <th v-sort-by-column:[this]="{fieldName: 'contact', fieldType: 'string', fieldFunction: getFullName, initialCellHtml: ''}">ФИО</th>
+                            <th v-sort-by-column:[this]="{fieldName: 'contact.age', fieldType: 'number', fieldFunction: null, initialCellHtml: ''}">Возраст</th>
+                            <th v-sort-by-column:[this]="{fieldName: 'contact.date', fieldType: 'date', fieldFunction: null, initialCellHtml: '', initialSorting: 'ASC'}">Дата</th>
+                            <th v-sort-by-column:[this]="{fieldName: 'group.language', fieldType: 'string', fieldFunction: null, initialCellHtml: ''}">Язык</th>
+                            <th v-sort-by-column:[this]="{fieldName: 'contact.test', fieldType: 'number', fieldFunction: null, initialCellHtml: ''}">Результат теста</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
+                        <tr v-cloak v-for="(enrollment, index) in sortedList"
+                            :key="index + getFullName(enrollment.contact)">
+                            <td class="column-id" v-cloak v-text="enrollment.id"></td>
+                            <td class="column-name" v-cloak v-text="getFullName(enrollment.contact)"></td>
+                            <td class="column-age" v-cloak v-text="enrollment.contact.age"></td>
+                            <td class="column-date" v-cloak v-text="enrollment.contact.date"></td>
+                            <td class="column-lang" v-cloak v-text="enrollment.group.language"></td>
+                            <td class="column-test" v-cloak v-text="enrollment.contact.test"></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <br>
+                <br>
+                <hr>
+
+                <p> sorting.fieldName: {{sorting.fieldName}}</p>
+                <p> sorting.fieldType: {{sorting.fieldType}}</p>
+                <p> sorting.isAscending: {{sorting.isAscending}}</p>
+
+                <hr>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="node_modules/vue/dist/vue.js"></script>
+    <script src="sorted_table.js"></script>
+</body>
+
+</html>

@@ -2,8 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\VueSortedTable",
-    "\\VueSortedTable2WithDirective"
+    "\\VueSortedTable2WithDirective",
+    "\\VueSortedTable3WithoutEval",
+    "\\VueSortedTable4",
+    "\\VueSortedTable5WithoutColumnName"
   ],
-  "SelectedNode": "\\VueSortedTable2WithDirective\\package.json",
+  "SelectedNode": "\\VueSortedTable5WithoutColumnName\\sorted_table.html",
   "PreviewInSolutionExplorer": false
 }
