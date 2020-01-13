@@ -19,12 +19,12 @@
                 <table class="table table-sm table-striped table-hover">
                     <thead class="thead-white">
                         <tr>
-                            <th v-sort-by-column:[this]="{fieldName: 'id', fieldType: 'number', fieldFunction: null, initialCellHtml: ''}">ID</th>
-                            <th v-sort-by-column:[this]="{fieldName: 'contact', fieldType: 'string', fieldFunction: getFullName, initialCellHtml: ''}">ФИО</th>
-                            <th v-sort-by-column:[this]="{fieldName: 'contact.age', fieldType: 'number', fieldFunction: null, initialCellHtml: ''}">Возраст</th>
-                            <th v-sort-by-column:[this]="{fieldName: 'contact.date', fieldType: 'date', fieldFunction: null, initialCellHtml: ''}">Дата</th>
-                            <th v-sort-by-column:[this]="{fieldName: 'group.language', fieldType: 'string', fieldFunction: null, initialCellHtml: ''}">Язык</th>
-                            <th v-sort-by-column:[this]="{fieldName: 'contact.test', fieldType: 'number', fieldFunction: null, initialCellHtml: ''}">Результат теста</th>
+                            <th v-sort-by-column:[this]="{fieldName: 'id', fieldType: 'number', fieldFunction: null}">ID</th>
+                            <th v-sort-by-column:[this]="{fieldName: 'contact', fieldType: 'string', fieldFunction: getFullName}">ФИО</th>
+                            <th v-sort-by-column:[this]="{fieldName: 'contact.age', fieldType: 'number', fieldFunction: null}">Возраст</th>
+                            <th v-sort-by-column:[this]="{fieldName: 'contact.date', fieldType: 'date', fieldFunction: null}">Дата</th>
+                            <th v-sort-by-column:[this]="{fieldName: 'group.language', fieldType: 'string', fieldFunction: null}">Язык</th>
+                            <th v-sort-by-column:[this]="{fieldName: 'contact.test', fieldType: 'number', fieldFunction: null}">Результат теста</th>
                         </tr>
                     </thead>
                     <tbody id="table-body">
