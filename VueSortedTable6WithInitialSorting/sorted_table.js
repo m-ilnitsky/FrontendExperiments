@@ -119,6 +119,8 @@
 
             el.innerHTML += iconHtml;
 
+            $(el).addClass("pointer");
+
             $(el).on("click",
                 event => binding.arg.changeSorting(binding.value.fieldName,
                     binding.value.fieldType,

@@ -21,3 +21,7 @@
 .column-test {
     width: 16%;
 }
+
+.pointer {
+    cursor: pointer;
+}
