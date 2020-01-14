@@ -1,0 +1,27 @@
+.table {
+    width: 100%;
+}
+
+[v-cloak] {
+    display: none;
+}
+
+
+.column-id {
+    width: 50px;
+}
+
+.column-name {
+    width: auto;
+}
+
+.column-age,
+.column-date,
+.column-lang,
+.column-test {
+    width: 16%;
+}
+
+.pointer {
+    cursor: pointer;
+}

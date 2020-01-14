@@ -5,8 +5,9 @@
     "\\VueSortedTable2WithDirective",
     "\\VueSortedTable3WithoutEval",
     "\\VueSortedTable4",
-    "\\VueSortedTable5WithoutColumnName"
+    "\\VueSortedTable5WithoutColumnName",
+    "\\VueSortedTable6WithInitialSorting"
   ],
-  "SelectedNode": "\\VueSortedTable5WithoutColumnName\\sorted_table.html",
+  "SelectedNode": "\\VueSortedTable6WithInitialSorting\\sorted_table.html",
   "PreviewInSolutionExplorer": false
 }

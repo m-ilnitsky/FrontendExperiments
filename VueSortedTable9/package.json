@@ -1,0 +1,17 @@
+{
+  "name": "task14_phonebook_bootstrap_vue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "phone_book.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.4.0",
+    "vue": "^2.6.10"
+  }
+}
